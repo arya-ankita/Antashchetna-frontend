@@ -1,0 +1,33 @@
+.gallery-with-text {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* gallery takes 2/3, text takes 1/3 */
+  gap: 40px;
+  align-items: start;
+  margin: 40px 0;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* responsive gallery */
+  gap: 20px;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.doctor-text {
+  max-width: 400px; /* keeps text readable */
+}
+
+.doctor-text h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.doctor-text p {
+  line-height: 1.6;
+}

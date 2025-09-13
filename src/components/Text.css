@@ -1,0 +1,27 @@
+.animated-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust as needed */
+  overflow: hidden; /* Hides the moving part */
+}
+
+.animated-text h1 {
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  animation: slideUp 1s ease-out forwards;
+  opacity: 0; /* Start invisible */
+}
+
+/* Keyframe for bottom-to-top animation */
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

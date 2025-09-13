@@ -1,0 +1,25 @@
+.about-me {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-me-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
